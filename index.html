@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PowerConnect+</title>
+
+  <meta content="PowerConnect+ is a 2-day program immersing students in the world of Power Electronics,
+    featuring expert guidance from ISRO, IITs, and IEEE PES." name="description">
+  <meta
+    content="Power,Connect,Plus, PowerConnect, power connect, PowerConnectPlus, power connect plus, power connect +, workshop, IEEE IAS SBC AJCE, IEEE IA/IE/PELS Jt. Chapter Kerala, EV Conclave, innovation, electrified future, transportation, Electric Vehicles, EVs, advancements, technologies, sustainable solutions, EV revolution, industry experts, researchers, enthusiasts, cleaner, greener, tomorrow"
+    name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/pc_logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#workshops">Events</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- navbar -->
+      <!-- <a class="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a> -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <img src="assets/img/pc_logo.png" alt="" title="">
+      <h1 id="dynamic-text" class="mb-4 pb-0 show">
+      </h1>
+      <p class="mb-4 pb-0" id="countdown"></p>
+      <!-- <p class="mb-4 pb-0" ></p> -->
+      <!-- <a href="assets/img/intro.mp4" class="glightbox play-btn mb-4"></a> -->
+      <!-- <a class="about-btn scrollto" href="#buy-tickets">Register Now</a> -->
+    </div>
+  </section>
+
+  <script defer>
+    const dynamicTextElement = document.getElementById("dynamic-text"), texts = ["POWER UP YOUR VISIONS", "THIS COMING MARCH", "AT AMAL JYOTHI COLLEGE"]; let currentTextIndex = 0; const fadeInDuration = 400, fadeOutDuration = 400, waitDuration = 4500, targetDate = "2024-03-02", daysTillTarget = daysTillTargetDate("2024-03-02"); function fadeIn() { let t = 0; !function e() { t += .1, dynamicTextElement.style.opacity = t.toString(), t < 1 && setTimeout(e, 40) }() } function fadeOut() { let t = 1; !function e() { t -= .1, dynamicTextElement.style.opacity = t.toString(), t > 0 && setTimeout(e, 40) }() } function toggleText() { fadeOut(), setTimeout(() => { dynamicTextElement.innerHTML = texts[currentTextIndex], fadeIn(), currentTextIndex = (currentTextIndex + 1) % texts.length }, 400) } function daysTillTargetDate(t) { let e = new Date, n = new Date(t); return Math.floor((n - e) / 864e5) } function getCountdownText(t) { if (t < 0) return ""; if (0 == t) return "FEW HOURS TO GO"; if (t > 14) return t + " DAYS TO GO"; if (1 == t) return "JUST ONE DAY TO GO"; if (t <= 14) return "IN JUST " + t + " DAYS" } toggleText(), setInterval(toggleText, 4900), document.getElementById("countdown").innerHTML = `${getCountdownText(daysTillTarget)}`;
+  </script>
+  <!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p><span style="color: #1bd766">PowerConnect+</span>is a 2-day program immersing students in the world of
+              Power Electronics,
+              featuring expert guidance from ISRO, IITs, and IEEE PES. This event, made possible by a grant
+              of $1250 from IEEE PES MDI 2023, offers a unique opportunity for students to explore and
+              innovate in this dynamic field.<br><a href="about.html">Learn more.</a>
+              <!-- TODO: link about page-->
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>Amal Jyothi College of Engineering,<br>Kanjirappally</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Saturday & Sunday<br>2-3 March 2024</p>
+          </div>
+        </div>
+        <div class="text-center ">
+          <a class="download-btn" target="_blank" href="assets/brochure.pdf">Download
+            Brochure</a>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Workshop Section ======= -->
+    <section id="workshops">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>EVENTS</h2>
+          <!-- <p>Here are some of our workshops</p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="workshops" data-aos="fade-up" data-aos-delay="100">
+              <a href="navigating_space/"><img src="assets/img/workshops/space.jpg" alt="Workshop 1"
+                  class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="navigating_space/">NAVIGATING SPACE</a></h3>
+                <p>Explore cutting-edge liquid propulsion <br> advancements in space exploration.</p>
+                <div class="social">
+                  <!-- <p></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="workshops" data-aos="fade-up" data-aos-delay="200">
+              <a href="illuminate_hope/"><img src="assets/img/workshops/craft-bulb.jpg" alt="Workshop 2"
+                  class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="illuminate_hope/"> ILLUMINATE HOPE</a></h3>
+                <p>Engage in crafting lamps hands-on to brighten the lives of rural students experiencing frequent power
+                  cuts.</p>
+                <div class="social">
+                  <!-- <p></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="workshops" data-aos="fade-up" data-aos-delay="300">
+              <a href="empower_from_within/"><img src="assets/img/workshops/empower.jpg" alt="Workshop 3"
+                  class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="empower_from_within/">EMPOWER FROM WITHIN</a></h3>
+                <p>Join a session on women's empowerment for actionable insights to drive positive change.</p>
+                <div class="social">
+                  <!-- <p></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="workshops" data-aos="fade-up" data-aos-delay="400">
+              <a href="powering_careers/"><img src="assets/img/workshops/powering.jpg" alt="Workshop 4"
+                  class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="powering_careers/">POWERING CAREERS</a></h3>
+                <p>Discover endless opportunities with IEEE PES! Join our session to shape the future of power and
+                  energy</p>
+                <div class="social">
+                  <!-- <p></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- End Workshop Section -->
+
+    <!-- ======= Highlights Section ======= -->
+    <section id="highlights">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>HIGHLIGHTS</h2>
+          <!-- <p>Here are some of our workshops</p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="highlights" data-aos="fade-up" data-aos-delay="100">
+              <a href="./"><img src="assets/img/programs/cultural-night.jpg" alt="Highlight 1" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="./">CULTURAL NIGHT</a></h3>
+                <p>Celebrate diversity through a mesmerizing <br> fusion of art, music, and traditions!</p>
+                <div class="social">
+                  <!-- <p></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="highlights" data-aos="fade-up" data-aos-delay="200">
+              <a href="./"><img src="assets/img/programs/electronicast.jpg" alt="Highlight 2" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="./">ELECTRONICAST</a></h3>
+                <p>Get ready to pitch your innovative ideas and compete for the chance to turn them into reality.
+                </p>
+                <div class="social">
+                  <!-- <p></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="highlights" data-aos="fade-up" data-aos-delay="300">
+              <a href="./"><img src="assets/img/programs/riddle-retreat.jpg" alt="Highlight 3" class="img-fluid"></a>
+              <div class="details">
+                <h3><a href="./">RIDDLE RETREAT</a></h3>
+                <p>Step into our exhilarating escape room game, where you'll unravel puzzles, decipher clues, and
+                  race against time for an unforgettable adventure.</p>
+                <div class="social">
+                  <!-- <p></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- End Workshop Section -->
+
+    <!-- ======= Buy Ticket Section ======= -->
+    <section id="prize-galore" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>PRIZE GALORE</h2>
+          <!-- <p></p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">ELECTRONICAST</h5>
+                <h5 class="card-title text-muted text-uppercase text-center"
+                  style="letter-spacing: normal; font-size: 80%; color: #1bd766;">idea pitching
+                </h5>
+                <h6 class="card-price text-center">₹3000</h6>
+                <!-- <hr> -->
+                <!-- <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>1<sup>st</sup> prize: 2500₹</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>2<sup>nd</sup> prize: 1750₹</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>3<sup>rd</sup> prize: 750₹</li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">RIDDLE RETREAT</h5>
+                <h5 class="card-title text-muted text-uppercase text-center"
+                  style="letter-spacing: normal; font-size: 80%; color: #1bd766;">escape room
+                </h5>
+                <h6 class="card-price text-center">₹3000</h6>
+                <!-- <hr> -->
+                <!-- <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>1<sup>st</sup> prize: 1000₹</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>2<sup>nd</sup> prize: 750₹</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>3<sup>rd</sup> prize: 250₹</li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <!-- Pro Tier -->
+          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">JAM COMPETITION</h5>
+                <h6 class="card-price text-center">₹2000</h6> -->
+          <!-- <hr> -->
+          <!-- <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>1<sup>st</sup> prize: 3000₹</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-check"></i></span>2<sup>nd</sup> prize:
+                  </li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-check"></i></span>3<sup>rd</sup> prize:
+                  </li>
+                </ul> -->
+          <!-- </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section><!-- End Buy Ticket Section -->
+
+    <!-- ======= Schedule Section ======= -->
+    <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+        </div>
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">2<sup>nd</sup> March</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">3<sup>rd</sup> March</a>
+          </li>
+        </ul>
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <!-- Schedule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+            <!-- Schedule items for Day 1 -->
+            <!-- Inauguration -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:00 AM - 10:00 AM</time></div>
+              <div class="col-md-10">
+                <h4>Inauguration</h4>
+                <p>Venue: Alphonsa hall</p>
+              </div>
+            </div>
+            <!-- Empower from within -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM - 11:00 AM</time></div>
+              <div class="col-md-10">
+                <h4>Empower from within</h4>
+                <p>Venue: RB auditorium</p>
+              </div>
+            </div>
+            <!-- Navigating Space -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM - 12:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Navigating Space</h4>
+                <p>Venue: RB auditorium</p>
+              </div>
+            </div>
+            <!-- Lunch -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 PM - 01:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Lunch</h4>
+                <p>Venue: College Food Court</p>
+              </div>
+            </div>
+            <!-- Illuminate hope -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>01:00 PM - 03:30 PM</time></div>
+              <div class="col-md-10">
+                <h4>Illuminate hope</h4>
+                <p>Venue: Electrical Lab</p>
+              </div>
+            </div>
+            <!-- Tea-Break -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:30 PM - 04:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Tea-Break</h4>
+                <p>Venue: College Food Court</p>
+              </div>
+            </div>
+            <!-- Illuminate hope (second session) -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM - 05:30 PM</time></div>
+              <div class="col-md-10">
+                <h4>Illuminate hope</h4>
+                <p>Venue: Electrical Lab</p>
+              </div>
+            </div>
+            <!-- Cultural night -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>05:30 PM - 07:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Cultural night</h4>
+                <p>Venue: RB auditorium</p>
+              </div>
+            </div>
+            <!-- Dinner -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>07:00 PM - 08:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Dinner</h4>
+                <p>Venue: College Food Court</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schedule Day 2 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
+            <!-- Schedule items for Day 2 -->
+            <!-- Breakfast -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>07:45 AM - 08:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Breakfast</h4>
+                <p>Venue: College Food Court</p>
+              </div>
+            </div>
+            <!-- Powering Careers -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>08:30 AM - 09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Powering Careers</h4>
+                <p>Venue: RB auditorium</p>
+              </div>
+            </div>
+            <!-- ElectroniCast -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM - 11:00 AM</time></div>
+              <div class="col-md-10">
+                <h4>ElectroniCast</h4>
+                <p>Venue: Alphonso hall</p>
+              </div>
+            </div>
+            <!-- Tea-Break -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM - 11:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Tea-Break</h4>
+                <p>Venue: College Food Court</p>
+              </div>
+            </div>
+            <!-- Riddle retreat -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:30 AM - 01:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Riddle retreat</h4>
+                <p>Venue: Central Complex Block</p>
+              </div>
+            </div>
+            <!-- Lunch break -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>01:00 PM - 02:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Lunch break</h4>
+                <p>Venue: College Food Court</p>
+              </div>
+            </div>
+            <!-- Closing ceremony -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM - 03:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Closing ceremony</h4>
+                <p>Venue: RB auditorium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section><!-- End Schedule Section -->
+
+    <!-- ======= Venue Section ======= -->
+    <section id="venue">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="section-header">
+          <h2>EVent Venue</h2>
+          <!-- <p>Event venue location info and gallery</p> -->
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-6 venue-map">
+            <iframe
+              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Amal%20Jyothi%20College%20of%20Engineering+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8 position-relative">
+                <h3>Amal Jyothi College of Engineering (Autonomous)</h3>
+                <p>Kanjirappally, Koovappally P.O.<br>
+                  Kottayam Dt., Kerala<br>
+                  India. PIN - 686518</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Venue Section -->
+
+    <!-- ======= Supporters Section ======= -->
+    <!-- <section id="supporters" class="section-with-bg">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Sponsors Section -->
+
+    <!-- =======  F.A.Q Section ======= -->
+    <!-- <section id="faq">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9">
+            <ul class="faq-list">
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at
+                  lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i
+                    class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi
+                  enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i
+                    class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur
+                  adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i
+                    class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus.
+                  Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i
+                    class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam
+                  aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i
+                    class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
+                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                    Purus gravida quis blandit turpis cursus in
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus
+                  ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
+                    class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
+                    nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut
+                    venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas
+                    egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+     -->
+    <!-- End  F.A.Q Section -->
+    <!-- ======= Subscribe Section ======= -->
+    <section id="subscribe">
+      <div class="container" data-aos="zoom-in">
+        <div class="section-header">
+          <h2>IEEE SB AJCE</h2>
+        </div>
+        <div class="container">
+          <p>Under the auspices of the Student Branch, the Computer Society, Women in Engineering affinity chapter,
+            Solid State Circuits Society, SIGHT and Industrial Applications Society have been founded to help keep
+            members technically up-to-date, network, and co-operate on research and projects. The AJCE Student Branch
+            consists of 150 plus active IEEE Student and Professional Membership holders. It provides a supportive and
+            stimulating environment for students to explore their interests, engage in hands-on learning experiences,
+            and connect with the wider engineering community.</p>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Subscribe Section -->
+
+    <!-- ======= Buy Ticket Section ======= -->
+    <section id="buy-tickets" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Buy Tickets</h2>
+          <!-- <p>Don't miss out on the Eventure Conclave , get your tickets now!</p> -->
+        </div>
+
+        <div class="row">
+          <!-- <h2 class="text-center">registration closed</h2> -->
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center"> IEEE MEMBERS </h5>
+                <h6 class="card-price text-center">₹449</h6>
+                <!-- <hr> -->
+                <!-- <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul> -->
+                <hr>
+                <div class="text-center ">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access"><a rel="stylesheet" class="text-white"
+                      href="https://www.yepdesk.com/powerconnect" target="_blank">Buy Now</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">NON IEEE MEMBERS</h5>
+                <h6 class="card-price text-center">₹549</h6>
+                <!-- <hr> -->
+                <!-- <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul> -->
+                <hr>
+                <div class="text-center ">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access"><a rel="stylesheet" class="text-white"
+                      href="https://www.yepdesk.com/powerconnect" target="_blank">Buy Now</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">IEEE (5 MEMBERS)</h5>
+                <h6 class="card-price text-center">₹1999</h6>
+                <!-- <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
+                </ul> -->
+                <hr>
+                <div class="text-center ">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access"><a rel="stylesheet" class="text-white"
+                      href="https://www.yepdesk.com/powerconnect" target="_blank">Buy Now</a></button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center"> NON IEEE (5 MEMBERS) </h5>
+                <h6 class="card-price text-center">₹2499</h6>
+                <!-- <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul> -->
+                <hr>
+                <div class="text-center ">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access"><a rel="stylesheet" class="text-white"
+                      href="https://www.yepdesk.com/powerconnect" target="_blank">Buy Now</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body" id="highlight-ticket">
+                <h5 class="card-title text-muted text-uppercase text-center">GROUP (5 MEMBERS)</h5>
+                <h6 class="card-price text-center">₹2999</h6>
+                <hr>
+                <p class="text-center">EXTRA 17% OFF</p>
+                <ul class=" fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>EXTRA 17% OFF</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center ">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access"><a rel="stylesheet" class="text-white"
+                      href="https://www.yepdesk.com/powerconnect" target="_blank">Buy Now</a></button>
+                </div>
+
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <!-- <p>Nihil officia ut sint molestiae tenetur.</p> -->
+          </div>
+
+          <div class="row contact-info">
+            <div class="col-md-4">
+              <div class="contact-address">
+                <!-- <i class="bi bi-geo-alt"></i> -->
+                <h3>Glady Prince </h3>
+                <address>Chairperson - IEEE SIGHT AJCE </address>
+                <p><a href="tel:+917558899031">+91 75588 99031</a></p>
+                <p><a href="mailto:glady@ieee.org">glady@ieee.org</a></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-address">
+                <!-- <i class="bi bi-geo-alt"></i> -->
+                <h3>Irin Rose Jaison</h3>
+                <address>Vice Chairperson - IEEE SIGHT AJCE</address>
+                <p><a href="tel:+919496759852">+91 94967 59852</a></p>
+                <p><a href="mailto:irinrosejaison@ieee.org">irinrosejaison@ieee.org</a></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-address">
+                <!-- <i class="bi bi-geo-alt"></i> -->
+                <h3>Dona Lisa Mathew</h3>
+                <address>Project Coordinator - IEEE SIGHT AJCE</address>
+                <p><a href="tel:+919656384335">+91 96563 84335</a></p>
+                <p><a href="mailto:donalisamathew@ieee.org">donalisamathew@ieee.org</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="assets/img/pc_logo.png" alt="power connect plus logo" width="90%" style="height: 30px;">
+            <p>
+              <span style="color: #1bd766">PowerConnect+</span> is a 2-day program immersing students in the world of
+              Power Electronics,
+              featuring expert guidance from ISRO, IITs, and IEEE PES. This event, made possible by a grant
+              of $1250 from IEEE PES MDI 2023, offers a unique opportunity for students to explore and
+              innovate in this dynamic field.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#workshops">Events</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#schedule">Schedule</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#venue">Venue</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              IEEE SB AJCE<br>
+              Amal Jyothi College of Engineering<br>
+              Kanjirapally, Kottayam District<br>
+              Kerala<br>
+              <strong>Phone:</strong>+91 8129897060<br>
+              <strong>Email:</strong> ieeesbajce@amaljyothi.ac.in<br>
+            </p>
+            <!-- 
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div> -->
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <a href="index.html"><img src="assets/img/Logos/ieee_blue.png" alt="IEEE" width="165" height="60"></a>
+
+            <div class="social-links pt-4">
+              <a href="https://twitter.com/ieeeajcesb/" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/ieeeajcesb/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ieeeajcesb/" class="instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>
+          <script>
+            document.write(new Date().getFullYear())
+          </script> - PowerConnect+
+        </strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+        Designed by <a href="https://ieeeajce.org/">IEEE SB AJCE</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
