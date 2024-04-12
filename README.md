@@ -9,4 +9,4 @@ PowerConnect+ is a power-packed 2-day program designed to immerse students in th
 
 **Made possible by a grant of $1250 from IEEE PES MDI 2023.**
 
-**Website:** [IEEE SB AJCE](https://ieeeajce.org)
+**Website:** [Power Connect +](https://ieeeajce.org/powerconnect/)
